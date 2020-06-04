@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SMS.master.cs" Inherits="SMS" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+      <Center>
+          <h1 style="border: thick ridge navy; margin: 20px; padding: 20px; font-family: 'Arial Rounded MT Bold'; font-size: 100px; font-weight: bolder; font-style: normal; font-variant: normal; text-transform: capitalize; color: navy; line-height: normal; background-color: ghostwhite; background-image: url('IMAGES/images (5).jpg');">STUDENT MANAGEMENT SYSTEM </h1>
+            <div style="border-style: double; border-width: thick; padding: 20px; margin: 10px; background-color:ghostwhite; font-family: 'Arial Rounded MT Bold'; font-size: large; font-weight: bolder; font-style: normal; font-variant: normal; color: forestgreen; height: 2px; width: 1385px;">
+            <asp:Label ID="Labeluserlogin" runat="server" Text=""></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;
+               
+            <asp:LinkButton ID="LinkCourse" runat="server" OnClick="LinkCourse_Click" Font-Bold="True" Font-Names="Arial Rounded MT Bold" ForeColor="ForestGreen">COURSE DETAILS</asp:LinkButton>&nbsp;&nbsp;&nbsp;
+             
+                <asp:LinkButton ID="LinkTeacher" runat="server" OnClick="LinkTeacher_Click" Font-Bold="True" ForeColor="ForestGreen">TEACHER DETAILS</asp:LinkButton>&nbsp;&nbsp;&nbsp;
+            <asp:LinkButton ID="LinkStudent" runat="server" OnClick="LinkStudent_Click" Font-Bold="True" ForeColor="ForestGreen">STUDENT DETAILS</asp:LinkButton>&nbsp;&nbsp;&nbsp;
+            <asp:LinkButton ID="LinkAdmin" runat="server" OnClick="LinkAdmin_Click" ForeColor="ForestGreen">ADMIN</asp:LinkButton>&nbsp;&nbsp;&nbsp;
+            <asp:LinkButton ID="Linklogout" runat="server" OnClick="Linklogout_Click" ForeColor="ForestGreen">LOGOUT</asp:LinkButton>&nbsp;<br />
+                <br />
+                <br />
+                <br />
+                &nbsp;&nbsp;
+        </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+        </Center>
+    </form>
+</body>
+</html>
